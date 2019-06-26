@@ -1,0 +1,47 @@
+//
+//  FF_WindowScrollView-PrefixHeader.pch
+//  FF_WindowScrollView
+//
+//  Created by mac on 2019/6/21.
+//  Copyright © 2019 healifeGroup. All rights reserved.
+//
+
+#ifndef FF_WindowScrollView_PrefixHeader_pch
+#define FF_WindowScrollView_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Masonry.h>
+#import <UIImageView+WebCache.h>
+#import <MJExtension/MJExtension.h>
+#import <MJRefresh/MJRefresh.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import "UIButton+SSEdgeInsets.h"
+
+
+#define kWidth      [UIScreen mainScreen].bounds.size.width
+#define kHeight      [UIScreen mainScreen].bounds.size.height
+
+// 状态栏高度
+#define kStatusBarHeight        [[UIApplication sharedApplication] statusBarFrame].size.height
+#define iPhoneX                 (kStatusBarHeight > 20 ? YES : NO)
+/// 导航栏高度
+#define kNavBarHeight           (iPhoneX ? 88.0 : 64.0)
+/// 底部安全区域高度
+#define kSafeAreaBottomHeight   (iPhoneX ? 34.0 : 0.0)
+
+#define kScale_width    MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)
+#define UI_S_CALE  kScale_width / 750.f
+#define kSCALE(value)  (value) * UI_S_CALE
+
+///字体
+#define kFont(fontSize)     [UIFont systemFontOfSize:fontSize]
+#define kFontBlod(fontSize) [UIFont boldSystemFontOfSize:fontSize]
+
+///随机颜色
+#define kRandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+
+
+
+#endif /* FF_WindowScrollView_PrefixHeader_pch */

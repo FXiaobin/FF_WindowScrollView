@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '9.0'
+
+target 'FF_WindowScrollView' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  pod 'Masonry'
+  pod 'MJRefresh'
+  pod 'MJExtension'
+  pod 'SDWebImage'
+  pod 'AFNetworking'
+  pod 'MBProgressHUD'
+  
+  pod 'PLPlayerKit', :podspec => 'https://raw.githubusercontent.com/pili-engineering/PLPlayerKit/master/PLPlayerKit-Universal.podspec' #真机包 + 模拟器包 (上线时需替换成真机包)
+  
+  
+  # Pods for FF_WindowScrollView
+
+  target 'FF_WindowScrollViewTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'FF_WindowScrollViewUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

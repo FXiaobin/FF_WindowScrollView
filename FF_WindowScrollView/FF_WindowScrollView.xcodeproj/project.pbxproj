@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04081DDC22BCD28A0048287B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04081DDB22BCD28A0048287B /* AppDelegate.m */; };
+		04081DDF22BCD28A0048287B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04081DDE22BCD28A0048287B /* ViewController.m */; };
+		04081DE222BCD28A0048287B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04081DE022BCD28A0048287B /* Main.storyboard */; };
+		04081DE422BCD28B0048287B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04081DE322BCD28B0048287B /* Assets.xcassets */; };
+		04081DE722BCD28B0048287B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04081DE522BCD28B0048287B /* LaunchScreen.storyboard */; };
+		04081DEA22BCD28B0048287B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04081DE922BCD28B0048287B /* main.m */; };
+		04081E0E22BCD3750048287B /* ShortVideoScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04081E0D22BCD3750048287B /* ShortVideoScrollView.m */; };
+		040AC9DA22C06299003C0387 /* ShortPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 040AC9D822C06299003C0387 /* ShortPlayerView.m */; };
+		040AC9DD22C062D5003C0387 /* ShortVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 040AC9DC22C062D5003C0387 /* ShortVideoModel.m */; };
+		040AC9E022C06C27003C0387 /* ShortVideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040AC9DE22C06C27003C0387 /* ShortVideoListViewController.m */; };
+		040AC9E322C06C41003C0387 /* ShortVideoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040AC9E122C06C41003C0387 /* ShortVideoListCell.m */; };
+		040AC9EB22C06CF0003C0387 /* video3.json in Resources */ = {isa = PBXBuildFile; fileRef = 040AC9E522C06CF0003C0387 /* video3.json */; };
+		040AC9EC22C06CF0003C0387 /* video6.json in Resources */ = {isa = PBXBuildFile; fileRef = 040AC9E622C06CF0003C0387 /* video6.json */; };
+		040AC9ED22C06CF0003C0387 /* video1.json in Resources */ = {isa = PBXBuildFile; fileRef = 040AC9E722C06CF0003C0387 /* video1.json */; };
+		040AC9EE22C06CF0003C0387 /* video5.json in Resources */ = {isa = PBXBuildFile; fileRef = 040AC9E822C06CF0003C0387 /* video5.json */; };
+		040AC9EF22C06CF0003C0387 /* video2.json in Resources */ = {isa = PBXBuildFile; fileRef = 040AC9E922C06CF0003C0387 /* video2.json */; };
+		040AC9F022C06CF0003C0387 /* video4.json in Resources */ = {isa = PBXBuildFile; fileRef = 040AC9EA22C06CF0003C0387 /* video4.json */; };
+		040AC9F322C0747D003C0387 /* UIButton+SSEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 040AC9F222C0747D003C0387 /* UIButton+SSEdgeInsets.m */; };
+		040AC9F622C0A3AA003C0387 /* VideoScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 040AC9F522C0A3AA003C0387 /* VideoScrollViewController.m */; };
+		05CC30FF4FCC8528DE1AAD2D /* libPods-FF_WindowScrollView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1253177CBAA3EBBC4060D63 /* libPods-FF_WindowScrollView.a */; };
+		279F7129997BEAAC36EE55B7 /* libPods-FF_WindowScrollViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C675584E990E6D94B02C8345 /* libPods-FF_WindowScrollViewTests.a */; };
+		ABC83A9A96CA9EC2BADDA9FB /* libPods-FF_WindowScrollViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 049CBFEE4F53408EADD56B07 /* libPods-FF_WindowScrollViewUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04081DF022BCD28B0048287B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04081DCF22BCD28A0048287B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04081DD622BCD28A0048287B;
+			remoteInfo = FF_WindowScrollView;
+		};
+		04081DFB22BCD28B0048287B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04081DCF22BCD28A0048287B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04081DD622BCD28A0048287B;
+			remoteInfo = FF_WindowScrollView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04081DD722BCD28A0048287B /* FF_WindowScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FF_WindowScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04081DDA22BCD28A0048287B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04081DDB22BCD28A0048287B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04081DDD22BCD28A0048287B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04081DDE22BCD28A0048287B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04081DE122BCD28A0048287B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		04081DE322BCD28B0048287B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04081DE622BCD28B0048287B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04081DE822BCD28B0048287B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04081DE922BCD28B0048287B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04081DEF22BCD28B0048287B /* FF_WindowScrollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FF_WindowScrollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04081DFA22BCD28B0048287B /* FF_WindowScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FF_WindowScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04081E0C22BCD3750048287B /* ShortVideoScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShortVideoScrollView.h; sourceTree = "<group>"; };
+		04081E0D22BCD3750048287B /* ShortVideoScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortVideoScrollView.m; sourceTree = "<group>"; };
+		04081E0F22BCD9F50048287B /* FF_WindowScrollView-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FF_WindowScrollView-PrefixHeader.pch"; sourceTree = "<group>"; };
+		040AC9D822C06299003C0387 /* ShortPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortPlayerView.m; sourceTree = "<group>"; };
+		040AC9D922C06299003C0387 /* ShortPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortPlayerView.h; sourceTree = "<group>"; };
+		040AC9DB22C062D5003C0387 /* ShortVideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShortVideoModel.h; sourceTree = "<group>"; };
+		040AC9DC22C062D5003C0387 /* ShortVideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortVideoModel.m; sourceTree = "<group>"; };
+		040AC9DE22C06C27003C0387 /* ShortVideoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortVideoListViewController.m; sourceTree = "<group>"; };
+		040AC9DF22C06C27003C0387 /* ShortVideoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortVideoListViewController.h; sourceTree = "<group>"; };
+		040AC9E122C06C41003C0387 /* ShortVideoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortVideoListCell.m; sourceTree = "<group>"; };
+		040AC9E222C06C41003C0387 /* ShortVideoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortVideoListCell.h; sourceTree = "<group>"; };
+		040AC9E522C06CF0003C0387 /* video3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video3.json; sourceTree = "<group>"; };
+		040AC9E622C06CF0003C0387 /* video6.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video6.json; sourceTree = "<group>"; };
+		040AC9E722C06CF0003C0387 /* video1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video1.json; sourceTree = "<group>"; };
+		040AC9E822C06CF0003C0387 /* video5.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video5.json; sourceTree = "<group>"; };
+		040AC9E922C06CF0003C0387 /* video2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video2.json; sourceTree = "<group>"; };
+		040AC9EA22C06CF0003C0387 /* video4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = video4.json; sourceTree = "<group>"; };
+		040AC9F122C0747C003C0387 /* UIButton+SSEdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SSEdgeInsets.h"; sourceTree = "<group>"; };
+		040AC9F222C0747D003C0387 /* UIButton+SSEdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SSEdgeInsets.m"; sourceTree = "<group>"; };
+		040AC9F422C0A3AA003C0387 /* VideoScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoScrollViewController.h; sourceTree = "<group>"; };
+		040AC9F522C0A3AA003C0387 /* VideoScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoScrollViewController.m; sourceTree = "<group>"; };
+		049CBFEE4F53408EADD56B07 /* libPods-FF_WindowScrollViewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FF_WindowScrollViewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		052C4DA6033876B71C477105 /* Pods-FF_WindowScrollViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_WindowScrollViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FF_WindowScrollViewUITests/Pods-FF_WindowScrollViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		41E4387DDFD3AF4E7CD54B0A /* Pods-FF_WindowScrollViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_WindowScrollViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FF_WindowScrollViewTests/Pods-FF_WindowScrollViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		4E5EDBED662C752A7887C896 /* Pods-FF_WindowScrollViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_WindowScrollViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FF_WindowScrollViewUITests/Pods-FF_WindowScrollViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9C211FC4878B9604044E838D /* Pods-FF_WindowScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_WindowScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FF_WindowScrollView/Pods-FF_WindowScrollView.debug.xcconfig"; sourceTree = "<group>"; };
+		C675584E990E6D94B02C8345 /* libPods-FF_WindowScrollViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FF_WindowScrollViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1253177CBAA3EBBC4060D63 /* libPods-FF_WindowScrollView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FF_WindowScrollView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E32A53F169B4E94D2F593460 /* Pods-FF_WindowScrollViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_WindowScrollViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FF_WindowScrollViewTests/Pods-FF_WindowScrollViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4CA520B41A17F709D398790 /* Pods-FF_WindowScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_WindowScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-FF_WindowScrollView/Pods-FF_WindowScrollView.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04081DD422BCD28A0048287B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05CC30FF4FCC8528DE1AAD2D /* libPods-FF_WindowScrollView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04081DEC22BCD28B0048287B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279F7129997BEAAC36EE55B7 /* libPods-FF_WindowScrollViewTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04081DF722BCD28B0048287B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABC83A9A96CA9EC2BADDA9FB /* libPods-FF_WindowScrollViewUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04081DCE22BCD28A0048287B = {
+			isa = PBXGroup;
+			children = (
+				04081DD922BCD28A0048287B /* FF_WindowScrollView */,
+				04081DD822BCD28A0048287B /* Products */,
+				8367972162A50D8A43666864 /* Pods */,
+				3B47D800339D8F4403BC70D2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04081DD822BCD28A0048287B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04081DD722BCD28A0048287B /* FF_WindowScrollView.app */,
+				04081DEF22BCD28B0048287B /* FF_WindowScrollViewTests.xctest */,
+				04081DFA22BCD28B0048287B /* FF_WindowScrollViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04081DD922BCD28A0048287B /* FF_WindowScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				040AC9D322C0628D003C0387 /* Main */,
+				04081DDA22BCD28A0048287B /* AppDelegate.h */,
+				04081DDB22BCD28A0048287B /* AppDelegate.m */,
+				04081DDD22BCD28A0048287B /* ViewController.h */,
+				04081DDE22BCD28A0048287B /* ViewController.m */,
+				04081DE022BCD28A0048287B /* Main.storyboard */,
+				04081DE322BCD28B0048287B /* Assets.xcassets */,
+				04081DE522BCD28B0048287B /* LaunchScreen.storyboard */,
+				04081E0F22BCD9F50048287B /* FF_WindowScrollView-PrefixHeader.pch */,
+				04081DE822BCD28B0048287B /* Info.plist */,
+				04081DE922BCD28B0048287B /* main.m */,
+			);
+			path = FF_WindowScrollView;
+			sourceTree = "<group>";
+		};
+		040AC9D322C0628D003C0387 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				040AC9E422C06CDD003C0387 /* resources */,
+				040AC9D422C0628D003C0387 /* cells */,
+				040AC9D522C0628D003C0387 /* models */,
+				040AC9D622C0628D003C0387 /* viewControllers */,
+				040AC9D722C0628D003C0387 /* views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		040AC9D422C0628D003C0387 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				040AC9E222C06C41003C0387 /* ShortVideoListCell.h */,
+				040AC9E122C06C41003C0387 /* ShortVideoListCell.m */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		040AC9D522C0628D003C0387 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				040AC9F122C0747C003C0387 /* UIButton+SSEdgeInsets.h */,
+				040AC9F222C0747D003C0387 /* UIButton+SSEdgeInsets.m */,
+				040AC9DB22C062D5003C0387 /* ShortVideoModel.h */,
+				040AC9DC22C062D5003C0387 /* ShortVideoModel.m */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		040AC9D622C0628D003C0387 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				040AC9DF22C06C27003C0387 /* ShortVideoListViewController.h */,
+				040AC9DE22C06C27003C0387 /* ShortVideoListViewController.m */,
+				040AC9F422C0A3AA003C0387 /* VideoScrollViewController.h */,
+				040AC9F522C0A3AA003C0387 /* VideoScrollViewController.m */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		040AC9D722C0628D003C0387 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				040AC9D922C06299003C0387 /* ShortPlayerView.h */,
+				040AC9D822C06299003C0387 /* ShortPlayerView.m */,
+				04081E0C22BCD3750048287B /* ShortVideoScrollView.h */,
+				04081E0D22BCD3750048287B /* ShortVideoScrollView.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		040AC9E422C06CDD003C0387 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				040AC9E722C06CF0003C0387 /* video1.json */,
+				040AC9E922C06CF0003C0387 /* video2.json */,
+				040AC9E522C06CF0003C0387 /* video3.json */,
+				040AC9EA22C06CF0003C0387 /* video4.json */,
+				040AC9E822C06CF0003C0387 /* video5.json */,
+				040AC9E622C06CF0003C0387 /* video6.json */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		3B47D800339D8F4403BC70D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1253177CBAA3EBBC4060D63 /* libPods-FF_WindowScrollView.a */,
+				C675584E990E6D94B02C8345 /* libPods-FF_WindowScrollViewTests.a */,
+				049CBFEE4F53408EADD56B07 /* libPods-FF_WindowScrollViewUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8367972162A50D8A43666864 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C211FC4878B9604044E838D /* Pods-FF_WindowScrollView.debug.xcconfig */,
+				E4CA520B41A17F709D398790 /* Pods-FF_WindowScrollView.release.xcconfig */,
+				E32A53F169B4E94D2F593460 /* Pods-FF_WindowScrollViewTests.debug.xcconfig */,
+				41E4387DDFD3AF4E7CD54B0A /* Pods-FF_WindowScrollViewTests.release.xcconfig */,
+				052C4DA6033876B71C477105 /* Pods-FF_WindowScrollViewUITests.debug.xcconfig */,
+				4E5EDBED662C752A7887C896 /* Pods-FF_WindowScrollViewUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04081DD622BCD28A0048287B /* FF_WindowScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04081E0322BCD28B0048287B /* Build configuration list for PBXNativeTarget "FF_WindowScrollView" */;
+			buildPhases = (
+				6BEA26BE1B8D2D7CF18A0F74 /* [CP] Check Pods Manifest.lock */,
+				04081DD322BCD28A0048287B /* Sources */,
+				04081DD422BCD28A0048287B /* Frameworks */,
+				04081DD522BCD28A0048287B /* Resources */,
+				3F5B7C906429A224B7F9B741 /* [CP] Embed Pods Frameworks */,
+				8479661D6BAAD45B7643DE09 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FF_WindowScrollView;
+			productName = FF_WindowScrollView;
+			productReference = 04081DD722BCD28A0048287B /* FF_WindowScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04081DEE22BCD28B0048287B /* FF_WindowScrollViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04081E0622BCD28B0048287B /* Build configuration list for PBXNativeTarget "FF_WindowScrollViewTests" */;
+			buildPhases = (
+				FE61146486D8E5C8A8E6AED9 /* [CP] Check Pods Manifest.lock */,
+				04081DEB22BCD28B0048287B /* Sources */,
+				04081DEC22BCD28B0048287B /* Frameworks */,
+				04081DED22BCD28B0048287B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04081DF122BCD28B0048287B /* PBXTargetDependency */,
+			);
+			name = FF_WindowScrollViewTests;
+			productName = FF_WindowScrollViewTests;
+			productReference = 04081DEF22BCD28B0048287B /* FF_WindowScrollViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04081DF922BCD28B0048287B /* FF_WindowScrollViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04081E0922BCD28B0048287B /* Build configuration list for PBXNativeTarget "FF_WindowScrollViewUITests" */;
+			buildPhases = (
+				7663CC683F401D61212D541E /* [CP] Check Pods Manifest.lock */,
+				04081DF622BCD28B0048287B /* Sources */,
+				04081DF722BCD28B0048287B /* Frameworks */,
+				04081DF822BCD28B0048287B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04081DFC22BCD28B0048287B /* PBXTargetDependency */,
+			);
+			name = FF_WindowScrollViewUITests;
+			productName = FF_WindowScrollViewUITests;
+			productReference = 04081DFA22BCD28B0048287B /* FF_WindowScrollViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04081DCF22BCD28A0048287B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = healifeGroup;
+				TargetAttributes = {
+					04081DD622BCD28A0048287B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					04081DEE22BCD28B0048287B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 04081DD622BCD28A0048287B;
+					};
+					04081DF922BCD28B0048287B = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 04081DD622BCD28A0048287B;
+					};
+				};
+			};
+			buildConfigurationList = 04081DD222BCD28A0048287B /* Build configuration list for PBXProject "FF_WindowScrollView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04081DCE22BCD28A0048287B;
+			productRefGroup = 04081DD822BCD28A0048287B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04081DD622BCD28A0048287B /* FF_WindowScrollView */,
+				04081DEE22BCD28B0048287B /* FF_WindowScrollViewTests */,
+				04081DF922BCD28B0048287B /* FF_WindowScrollViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04081DD522BCD28A0048287B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04081DE722BCD28B0048287B /* LaunchScreen.storyboard in Resources */,
+				040AC9EB22C06CF0003C0387 /* video3.json in Resources */,
+				04081DE422BCD28B0048287B /* Assets.xcassets in Resources */,
+				04081DE222BCD28A0048287B /* Main.storyboard in Resources */,
+				040AC9EF22C06CF0003C0387 /* video2.json in Resources */,
+				040AC9F022C06CF0003C0387 /* video4.json in Resources */,
+				040AC9EE22C06CF0003C0387 /* video5.json in Resources */,
+				040AC9EC22C06CF0003C0387 /* video6.json in Resources */,
+				040AC9ED22C06CF0003C0387 /* video1.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04081DED22BCD28B0048287B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04081DF822BCD28B0048287B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F5B7C906429A224B7F9B741 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FF_WindowScrollView/Pods-FF_WindowScrollView-frameworks.sh",
+				"${PODS_ROOT}/PLPlayerKit/Pod/Library-Universal/PLPlayerKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PLPlayerKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FF_WindowScrollView/Pods-FF_WindowScrollView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BEA26BE1B8D2D7CF18A0F74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FF_WindowScrollView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7663CC683F401D61212D541E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FF_WindowScrollViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8479661D6BAAD45B7643DE09 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FF_WindowScrollView/Pods-FF_WindowScrollView-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FF_WindowScrollView/Pods-FF_WindowScrollView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE61146486D8E5C8A8E6AED9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FF_WindowScrollViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04081DD322BCD28A0048287B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040AC9DD22C062D5003C0387 /* ShortVideoModel.m in Sources */,
+				040AC9E022C06C27003C0387 /* ShortVideoListViewController.m in Sources */,
+				040AC9E322C06C41003C0387 /* ShortVideoListCell.m in Sources */,
+				04081DDF22BCD28A0048287B /* ViewController.m in Sources */,
+				040AC9F322C0747D003C0387 /* UIButton+SSEdgeInsets.m in Sources */,
+				04081DEA22BCD28B0048287B /* main.m in Sources */,
+				04081E0E22BCD3750048287B /* ShortVideoScrollView.m in Sources */,
+				04081DDC22BCD28A0048287B /* AppDelegate.m in Sources */,
+				040AC9DA22C06299003C0387 /* ShortPlayerView.m in Sources */,
+				040AC9F622C0A3AA003C0387 /* VideoScrollViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04081DEB22BCD28B0048287B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04081DF622BCD28B0048287B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04081DF122BCD28B0048287B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04081DD622BCD28A0048287B /* FF_WindowScrollView */;
+			targetProxy = 04081DF022BCD28B0048287B /* PBXContainerItemProxy */;
+		};
+		04081DFC22BCD28B0048287B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04081DD622BCD28A0048287B /* FF_WindowScrollView */;
+			targetProxy = 04081DFB22BCD28B0048287B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		04081DE022BCD28A0048287B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04081DE122BCD28A0048287B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		04081DE522BCD28B0048287B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04081DE622BCD28B0048287B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04081E0122BCD28B0048287B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04081E0222BCD28B0048287B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04081E0422BCD28B0048287B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C211FC4878B9604044E838D /* Pods-FF_WindowScrollView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KTRXQ7GTRW;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FF_WindowScrollView/FF_WindowScrollView-PrefixHeader.pch";
+				INFOPLIST_FILE = FF_WindowScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "healifeGroup.FF-WindowScrollView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04081E0522BCD28B0048287B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4CA520B41A17F709D398790 /* Pods-FF_WindowScrollView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KTRXQ7GTRW;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FF_WindowScrollView/FF_WindowScrollView-PrefixHeader.pch";
+				INFOPLIST_FILE = FF_WindowScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "healifeGroup.FF-WindowScrollView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04081E0722BCD28B0048287B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E32A53F169B4E94D2F593460 /* Pods-FF_WindowScrollViewTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FF_WindowScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "healifeGroup.FF-WindowScrollViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FF_WindowScrollView.app/FF_WindowScrollView";
+			};
+			name = Debug;
+		};
+		04081E0822BCD28B0048287B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41E4387DDFD3AF4E7CD54B0A /* Pods-FF_WindowScrollViewTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FF_WindowScrollViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "healifeGroup.FF-WindowScrollViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FF_WindowScrollView.app/FF_WindowScrollView";
+			};
+			name = Release;
+		};
+		04081E0A22BCD28B0048287B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 052C4DA6033876B71C477105 /* Pods-FF_WindowScrollViewUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FF_WindowScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "healifeGroup.FF-WindowScrollViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FF_WindowScrollView;
+			};
+			name = Debug;
+		};
+		04081E0B22BCD28B0048287B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E5EDBED662C752A7887C896 /* Pods-FF_WindowScrollViewUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FF_WindowScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "healifeGroup.FF-WindowScrollViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FF_WindowScrollView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04081DD222BCD28A0048287B /* Build configuration list for PBXProject "FF_WindowScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04081E0122BCD28B0048287B /* Debug */,
+				04081E0222BCD28B0048287B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04081E0322BCD28B0048287B /* Build configuration list for PBXNativeTarget "FF_WindowScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04081E0422BCD28B0048287B /* Debug */,
+				04081E0522BCD28B0048287B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04081E0622BCD28B0048287B /* Build configuration list for PBXNativeTarget "FF_WindowScrollViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04081E0722BCD28B0048287B /* Debug */,
+				04081E0822BCD28B0048287B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04081E0922BCD28B0048287B /* Build configuration list for PBXNativeTarget "FF_WindowScrollViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04081E0A22BCD28B0048287B /* Debug */,
+				04081E0B22BCD28B0048287B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04081DCF22BCD28A0048287B /* Project object */;
+}
